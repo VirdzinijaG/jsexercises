@@ -143,7 +143,22 @@ let nelyginiai = 0;
 while (nelyginiai < 3) {
     r = Math.trunc(Math.random() * 10 + 1);
     if (r % 2 !== 0) {
-       nelyginiai++
+        nelyginiai++
     }
     console.log(r);
 }
+
+console.log("-------------------");
+
+// 13 console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Ciklą kartoti tol, kol neiškris abu vienodi skaičiai;
+
+console.log("-----", 13, '------');
+
+let r1 = 0;
+let r2 = 1;
+while (r1 !== r2) {
+    r1 = Math.floor(Math.random() * 10 + 1);
+    r2 = Math.floor(Math.random() * 10 + 1);
+    console.log(r1, ' ', r2);
+}
+
