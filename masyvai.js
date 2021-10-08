@@ -44,6 +44,8 @@ console.log("-------------------");
 
 // 4 Išleisti visus metalinius pinigus (reikšmes, kurios yra mažesnės arba lygios 2 padaryti lygias 0) iš 1 uždavinio;
 
+console.log("-----", 4, '------');
+
 for (let i in arr) {
     if (arr[i] <= 2) {
         arr[i] = 0;
@@ -54,4 +56,50 @@ console.log(arr);
 
 console.log("-------------------");
 
-// 5 
+// 5 Surasti didžiausią reikšmę 1 uždavinio masyve ir paskaičiuoti kiek tokių didžiausių reikšmių masyve yra;
+
+console.log("-----", 5, '------');
+
+var max = Math.max(...arr);
+console.log("Didziausia reiksme masyve: ", max);
+
+let kiek = 0;
+
+for (let i in arr) {
+    if (arr[i] === max) {
+        kiek += [i].length
+    }
+}
+
+console.log(kiek);
+
+console.log("-------------------");
+
+// 6 Visus masyvo elementus, kurie yra lygūs 0, pakeisti į tų elementų indeksų (vietų, numerių) reikšmes;
+
+console.log("-----", 6, '------');
+
+console.log(arr);
+for (let i in arr) {
+    if (arr[i] === 0) {
+        arr[i] = arr.indexOf(arr[i]);
+    }
+}
+
+console.log(arr);
+
+console.log("-------------------");
+
+// 7 Į 1 uždavinio masyvą pridėti tiek naujų reikšmių (pinigų, atsitiktinių skaičių nuo 0 iki 10), kad masyvo ilgis būtų lygiai 30;
+
+console.log("-----", 7, '------');
+
+console.log(arr, "Masyvo ilgis ", arr.length);
+
+for (let i = arr.length; i < 30; i++) {
+    arr.push(randomValues(0, 10));
+}
+
+console.log(arr, "Masyvo ilgis ", arr.length);
+
+console.log("-------------------");
