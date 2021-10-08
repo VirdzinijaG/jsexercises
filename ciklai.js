@@ -148,6 +148,8 @@ while (nelyginiai < 3) {
     console.log(r);
 }
 
+console.log('Nelyginiai ', nelyginiai);
+
 console.log("-------------------");
 
 // 13 console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Ciklą kartoti tol, kol neiškris abu vienodi skaičiai;
@@ -161,7 +163,6 @@ while (r1 !== r2) {
     r2 = Math.floor(Math.random() * 10 + 1);
     console.log(r1, ' ', r2);
 }
-
 console.log("-------------------");
 
 // console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Skaičiuoti abiejų skaičių sumas skirtinguose kintamuosiuose (skaičiuoti skaičių stulpelių sumas). Ciklą kartoti tol, kol kiekviena iš sumų bus daugiau nei 100;
@@ -185,4 +186,27 @@ while (s1 <= 100 || s2 <= 100) {
 
 console.log('Suma: ', s1, s2);
 
+console.log("-------------------");
+
+// 15. console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Ciklą kartoti kol bus sugeneruota po tris arba daugiau nelyginių skaičių  (skaičiai atskiruose stulpeliuose).
+
+console.log("-----", 14, '------');
+
+let r5 = 0;
+let r6 = 0;
+
+let n = 0;
+let n1 = 0;
+
+while (n < 3 || n1 < 3) {
+    r5 = Math.trunc(Math.random() * 10 + 1);
+    r6 = Math.trunc(Math.random() * 10 + 1);
+    if (r5 % 2 !== 0 && r6 % 2 !== 0) {
+        n++;
+        n1++
+    }
+    console.log(r5, " ", r6);
+}
+
+console.log('Nelyginiai ', n, n1);
 console.log("-------------------");
