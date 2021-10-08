@@ -167,3 +167,22 @@ console.log("-------------------");
 // console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). Skaičiuoti abiejų skaičių sumas skirtinguose kintamuosiuose (skaičiuoti skaičių stulpelių sumas). Ciklą kartoti tol, kol kiekviena iš sumų bus daugiau nei 100;
 
 
+console.log("-----", 14, '------');
+
+let r3 = 0;
+let r4 = 0;
+let s1 = 0;
+let s2 = 0;
+
+while (s1 <= 100 || s2 <= 100) {
+    r3 = Math.floor(Math.random() * 10 + 1);
+    r4 = Math.floor(Math.random() * 10 + 1);
+
+    s1 += r3;
+    s2 += r4;
+    console.log(r3, ' ', r4);
+}
+
+console.log('Suma: ', s1, s2);
+
+console.log("-------------------");
